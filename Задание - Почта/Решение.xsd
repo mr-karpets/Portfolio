@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<xs:element name='Message'>
+	<xs:complexType>
+		<xs:all>
+			<xs:element name='Agent' type='xs:string'/>
+			<xs:element name='Subject' type='xs:string'/>
+			<xs:element name='PostalFee'>
+				<xs:simpleType>
+					<xs:restriction base='xs:integer'>
+						<xs:minInclusive value='80'/>
+						<xs:maxExclusive value='121'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name='Region'>
+				<xs:complexType>
+					<xs:choice>
+						<xs:element name='Kingdom' type='xs:string'/>
+						<xs:element name='Village' type='xs:string'/>
+						<xs:element name='Town' type='xs:string'/>
+					</xs:choice>
+				</xs:complexType>
+			</xs:element>
+            <xs:element name='Urgent' type='xs:boolean' minOccurs='0'/>
+			<xs:element name='MessageCode' type='xs:integer'/>
+			<xs:element name='Comment'>
+				<xs:simpleType>
+					<xs:restriction base='xs:string'>
+						<xs:pattern value='.*(Your Magesty!|My Queen!|Deer Queen!|Dear Queen!|Greetings, my Queen!).*'/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:element>
+</xs:schema>
