@@ -1,4 +1,4 @@
-###### Условия
+# Условия
 
 Вы - распорядитель Главной Королевской Почты, в ваше ведомство поступают сообщения особой важности от агентов, и разведчиков, которые содержат разведданные и другие полезные сведения, которые используются при принятии решений в королевстве.
 
@@ -10,9 +10,9 @@
 
 Для удобства работы с сообщениями они были представлены в виде xml сообщений, а правила проверки подлинности должны быть оформлены в виде xsd схемы, по которой эти сообщения будут проверяться.
 
-#### Набор подлинных сообщений
+### Набор подлинных сообщений
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Andrew Levins</Agent>
@@ -25,9 +25,9 @@
         <MessageCode>2</MessageCode>
         <Comment>Dear Queen! north of the kingdom is under conrtol.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Amanda Smith</Agent>
@@ -39,9 +39,9 @@
         <MessageCode>4</MessageCode>
         <Comment>Your Magesty! New gold minery was established at the Shining Rocks village.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Faceless Edward</Agent>
@@ -54,9 +54,9 @@
         <Urgent>false</Urgent>
         <Comment>Greetings, my Queen! No news is good news.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Richard Johnson</Agent>
@@ -69,9 +69,9 @@
         <Urgent>true</Urgent>
         <Comment>My Queen! Your attention needed to people of Thornwille.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Andrew Levins</Agent>
@@ -84,9 +84,9 @@
         <Urgent>true</Urgent>
         <Comment>Deer Queen! I recommend you to arrange scout squad to reveal activities at this Region.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Nickole</Agent>
@@ -98,9 +98,9 @@
         <MessageCode>8</MessageCode>
         <Comment>My Queen! Everything is still in Stillville.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Amanda Smith</Agent>
@@ -113,9 +113,9 @@
         <Urgent>false</Urgent>
         <Comment>My Queen! Good news for you, our gold vallets would be fullfilled soon.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Frederick Pauls</Agent>
@@ -128,11 +128,11 @@
         <Urgent>true</Urgent>
         <Comment>Your Magesty! We need to defend our east.</Comment>
 </Message>
-'''
+~~~
 
-#### Набор ложных сообщений
+### Набор ложных сообщений
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Peter Norton</Agent>
@@ -145,9 +145,9 @@
         <Urgent>true</Urgent>
         <Comment>Dear Queen! north of the kingdom is getting dangerous!</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Miranda Smith</Agent>
@@ -159,9 +159,9 @@
         <MessageCode>9</MessageCode>
         <Comment>Your Magesty! We need additional supply, our midery dosn't work any more.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Faceless Edward</Agent>
@@ -173,9 +173,9 @@
         <MessageCode>16</MessageCode>
         <Comment>Greetings, my Queen! No news from Beawers Lake.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Richard Johnson</Agent>
@@ -188,9 +188,9 @@
         <Urgent>no</Urgent>
         <Comment>My Queen! Your attention is not needed here.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Sir Andrew Levins</Agent>
@@ -203,9 +203,9 @@
         <Comment>Deer Queen! I recommend you to arrange scout squad to
 reveal activities at this Region.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Nickole</Agent>
@@ -215,9 +215,9 @@ reveal activities at this Region.</Comment>
         <MessageCode>8</MessageCode>
         <Comment>My Queen! Everything is still in Stillville.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Amanda Smith</Agent>
@@ -231,9 +231,9 @@ reveal activities at this Region.</Comment>
         <Code>4</Code>
         <Comment>My Queen! Bad news for you, our gold vallets would be empty soon.</Comment>
 </Message>
-'''
+~~~
 
-'''
+~~~
 <?xml version='1.0' encoding='UTF-8'?>
 <Message>
         <Agent>Frederick Pauls</Agent>
@@ -246,9 +246,9 @@ reveal activities at this Region.</Comment>
         <Urgent>true</Urgent>
         <Comment>We need to attack Red King first.</Comment>
 </Message>
-'''
+~~~
 
-#### Как оформить решение
+### Как оформить решение
 
 В задании приведено два набора по 8 xml сообщений.
 
