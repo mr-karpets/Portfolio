@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systemRequirementSet>
+	<system id="1">
+		<systemRequirement>2</systemRequirement>
+		<systemRequirement>3</systemRequirement> 
+		<systemRequirement>7</systemRequirement> 
+		<systemRequirement>9</systemRequirement> 
+		<systemRequirement>16</systemRequirement> 
+		<systemRequirement>25</systemRequirement> 
+	</system>
+	<system id="2">
+		<systemRequirement>4</systemRequirement>
+		<systemRequirement>8</systemRequirement>
+		<systemRequirement>11</systemRequirement>
+		<systemRequirement>13</systemRequirement>
+		<systemRequirement>15</systemRequirement>
+		<systemRequirement>18</systemRequirement>
+		<systemRequirement>23</systemRequirement>
+		<systemRequirement>24</systemRequirement>
+	</system>
+	<system id="3">
+		<systemRequirement>5</systemRequirement>
+		<systemRequirement>10</systemRequirement>
+		<systemRequirement>12</systemRequirement>
+		<systemRequirement>14</systemRequirement>
+		<systemRequirement>19</systemRequirement>
+		<systemRequirement>26</systemRequirement>
+	</system>
+</systemRequirementSet>
