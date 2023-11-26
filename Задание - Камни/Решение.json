@@ -1,0 +1,43 @@
+{
+	“type" : “object”,
+	“properties” :
+	"gems" : [
+		{"Berill" : {
+			"STR" : 0,
+			"GodsBlessed" : ["Aid", "Gefest"], 
+			"Necromancy" : true,
+			"Weapons" : [],
+			"Mana" : 0,
+			"INT" : 30,
+			"Skills" : []
+		}},
+		{"Emerald" : {
+			"STR" : 0,
+			"GodsBlessed" : ["Aid", "Zeus"],
+			"Necromancy" : true,
+			"Weapons" : [],
+			"Mana" : 0,
+			"INT" : 100,
+			"Skills" : []
+		}},
+		{"Amethyst" : {
+			"STR" : 0,
+			"GodsBlessed" : ["Aid"],
+			"Necromancy" : true,
+			"Weapons" : [],
+			"Mana" : 0,
+			"INT" : 0,
+			"Skills" : []
+		}},
+		{"Onyx" : {
+			"STR" : 0,
+			"GodsBlessed" : ["Zeus", "Aid", "Gefest"],
+			"Necromancy" : true,
+			"Weapons" : [],
+			"Mana" : 0,
+			"INT" : 100,
+			"Skills" : []
+		}}
+	],
+	"GodsBlessed" : true
+}
