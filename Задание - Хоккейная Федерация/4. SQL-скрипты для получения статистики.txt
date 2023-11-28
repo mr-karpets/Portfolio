@@ -1,0 +1,65 @@
+# SQL-скрипты для получения статистики
+
+### 1. Счёт команды в определённой игре
+
+Входные данные:
+
+- Дата игры в формате 'ГГГГ-MM-ДД ЧЧ:ММ:СС'
+- Название команды
+
+Выходные данные:
+
+<Победа(поражение или ничья)> у команды <название команды> счёт: <N:N>
+
+```
+SELECT DISTINCT CONCAT(
+	(SELECT DISTINCT CASE 
+		WHEN (SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team = '{1}') > (SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team <> '{1}') THEN 'Победа'
+		WHEN (SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team = '{1}') < (SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team <> '{1}') THEN 'Поражение'
+		ELSE 'Ничья'
+	END AS Результат
+	FROM view_games),	
+	' у команды ',
+	'{1}',
+	' счёт: ',
+	(SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team = '{1}'),
+	':', 
+	(SELECT score FROM view_games WHERE game = '2023-06-01 18:00:00' AND team <> '{1}'))
+FROM view_games
+;
+```
+
+### 2. Количество игр игрока за сезон
+
+Входные данные:
+
+- id_player или уникальный номер игрока в системе.
+
+Выходные данные:
+
+<число игр>
+
+```
+select Games as Количество_игр from view_players
+where id = 1
+;
+```
+
+### 3. Лучший бомбардир сезона
+
+Входные данные:
+
+- season_id или уникальный номер сезона в системе.
+
+Выходные данные:
+
+<Имя и фамилия>
+
+```
+SELECT CONCAT(first_name, last_name) AS Лучший_бомбардир
+	FROM view_players
+	WHERE score = (SELECT MAX(score) FROM view_players) AND season = 1
+;
+```
+
+

@@ -1,0 +1,60 @@
+INSERT INTO Seasons (start_season, end_season) VALUES (
+	'2023-06-01',
+	'2023-08-30'
+);
+
+INSERT INTO Dates (date_of_game, season_id) VALUES (
+	'2023-06-01 18:00',
+	1
+);
+
+INSERT INTO Teams (team_name) VALUES ('{1}'), ('{2}');
+
+INSERT INTO Players (first_name, middle_name, last_name, team_id) VALUES 
+	('Ivan', 'Ivanov', 'Ivanov', 1),
+	('Paul', '', 'Semenov', 1),
+	('Alex', '', 'Nikolaev', 1),
+	('Denis', '', 'Sergeev', 1),
+	('Vasiliy', '', 'Vasilenko', 1),
+	('Mihail', '', 'Nikitin', 1),
+	('Max', '', 'Mihailov', 1),
+	('Igor', '', 'Denisov', 1),
+	('Alexey', '', 'Aleksandrov', 1),
+	('Stepan', '', 'Matveev', 1),
+	('Ivan', '', 'Maksimov', 1),
+	('Aleksandr', '', 'Ivanov', 2),
+	('Semen', '', 'Grigoriev', 2),
+	('Vladimir', '', 'Volodin', 2),
+	('David', 'Maximovich', 'Sergeev', 2),
+	('Danil', '', 'Stepanov', 2),
+	('Ivan', '', 'Ivleev', 2),
+	('Aleksandr', '', 'Pavlov', 2),
+	('Sergey', '', 'Eremeev', 2),
+	('Maxim', '', 'Aleksandrov', 2),
+	('Pavel', '', 'Streltcov', 2),
+	('Anton', '', 'Maksimov', 2)
+;
+INSERT INTO Scores (date_id, player_id, team_id, score) VALUES 
+	(1, 1, 1, 0),
+	(1, 2, 1, 0),
+	(1, 3, 1, 3),
+	(1, 4, 1, 0),
+	(1, 5, 1, 0),
+	(1, 6, 1, 0),
+	(1, 7, 1, 0),
+	(1, 8, 1, 1),
+	(1, 9, 1, 0),
+	(1, 10, 1, 0),
+	(1, 11, 1, 0),
+	(1, 12, 2, 1),
+	(1, 13, 2, 0),
+	(1, 14, 2, 0),
+	(1, 15, 2, 0),
+	(1, 16, 2, 1),
+	(1, 17, 2, 0),
+	(1, 18, 2, 0),
+	(1, 19, 2, 0),
+	(1, 20, 2, 0),
+	(1, 21, 2, 0),
+	(1, 22, 2, 1)
+;
